@@ -1,4 +1,8 @@
+<center>
+<img src="./src/assets/images/meteor.png" width="150px"/>
+
 # Tauri Meteor Template
+</center>
 
 ## Initial development requirements
 
