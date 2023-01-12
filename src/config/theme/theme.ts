@@ -1,14 +1,12 @@
 import { extendTheme } from "@chakra-ui/react";
 import {
-  fonts,
-  colors,
   Modal,
   Button,
   MenuTheme,
   Input,
   Tabs,
-  layerStyles
-} from "@/config/theme/chakra";
+} from "@/config/theme/components";
+import { colors, fonts, layerStyles } from "@/config/theme/foundation";
 
 const borderRadius = {
   radii: {
@@ -24,7 +22,7 @@ const borderRadius = {
   },
 }
 
-const FXDTheme = extendTheme({
+const Theme = extendTheme({
   ...borderRadius,
 
   fonts,
@@ -83,8 +81,8 @@ const FXDTheme = extendTheme({
   config: {
     initialColorMode: "dark",
     useSystemColorMode: false,
-    cssVarPrefix: "taurimeteorboi",
+    cssVarPrefix: "tauriboilerplate",
   },
 });
 
-export default FXDTheme;
+export default Theme;
