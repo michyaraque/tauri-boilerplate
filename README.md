@@ -1,5 +1,8 @@
+# Boilerplate and Starter for Tauri with TauriJS, ReactJS +18, Vite, Typescript, Zustand and Chakra-UI
+
 ![](/docs/tauri-meteor-template.jpg)
-# Tauri Meteor Template
+
+The template has initial has a meteorite based theme in order to generate a user interface based on something. ☄️☄️☄️☄️
 ## Resources
 
 - [ReactJS](https://reactjs.org/)

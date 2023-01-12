@@ -1,5 +1,5 @@
 {
-  "name": "tauri-meteor-template",
+  "name": "tauri-boilerplate",
   "version": "1.0.0",
   "scripts": {
     "dev": "tauri dev",
