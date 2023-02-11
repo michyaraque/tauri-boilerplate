@@ -103,7 +103,7 @@ fn main() {
         )
         .unwrap();
     }))
-    .plugin(tauri_plugin_window_state::Builder::default().build())
+    /* .plugin(tauri_plugin_window_state::Builder::default().build()) */ // Enable if you want to control the window state
     .plugin(PluginBuilder::default().build())
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
