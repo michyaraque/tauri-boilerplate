@@ -42,10 +42,9 @@ export default defineConfig({
     http: "stream-http",
     assert: "assert"
   },
-  envPrefix: ['VITE_', 'TAURI_'],
+  envPrefix: ['VITE_', 'TAURI_PLATFORM', 'TAURI_ARCH', 'TAURI_FAMILY', 'TAURI_PLATFORM_VERSION', 'TAURI_PLATFORM_TYPE', 'TAURI_DEBUG'],
   build: {
     target: ['es2021', 'chrome100', 'safari13'],
-    sourcemap: false,
     rollupOptions: {
       plugins: [
         inject({ Buffer: ['buffer', 'Buffer'] }),
@@ -63,6 +62,8 @@ export default defineConfig({
       include: [/node_modules/],
       transformMixedEsModules: true
     },
+    minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
+    sourcemap: !!process.env.TAURI_DEBUG,
     outDir: 'build',
   },
   optimizeDeps: {

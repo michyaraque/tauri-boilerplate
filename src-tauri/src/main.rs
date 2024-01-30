@@ -4,11 +4,9 @@
   windows_subsystem = "windows"
 )]
 
-use tauri::{Manager}; // used by .get_window
+use tauri::Manager; // used by .get_window
 use tauri::{self, SystemTrayEvent, SystemTrayMenuItem};
 use tauri::{CustomMenuItem, SystemTray, SystemTrayMenu};
-use tauri_plugin_store::PluginBuilder;
-use tauri_plugin_window_state;
 use std::time::{SystemTime, UNIX_EPOCH};
 
 #[derive(Clone, serde::Serialize)]
@@ -103,8 +101,7 @@ fn main() {
         )
         .unwrap();
     }))
-    /* .plugin(tauri_plugin_window_state::Builder::default().build()) */ // Enable if you want to control the window state
-    .plugin(PluginBuilder::default().build())
+    .plugin(tauri_plugin_window_state::Builder::default().build())
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }

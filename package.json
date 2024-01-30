@@ -36,7 +36,7 @@
     "@emotion/react": "11",
     "@emotion/styled": "11",
     "@fontsource/montserrat": "^4.5.13",
-    "@tauri-apps/api": "^1.0.1",
+    "@tauri-apps/api": "^1.5.3",
     "framer-motion": "6",
     "localforage": "^1.10.0",
     "mutative": "^0.2.2",
@@ -51,7 +51,7 @@
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
     "@rollup/plugin-inject": "^4.0.4",
-    "@tauri-apps/cli": "^1.0.0-rc.8",
+    "@tauri-apps/cli": "^1.5.9",
     "@types/node": "^18.7.15",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^1.0.7",
